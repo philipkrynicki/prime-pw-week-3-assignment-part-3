@@ -3,13 +3,13 @@ console.log('****** Part Supply *******');
 
 // 1. Create a variable called 'partsNeeded' with a value of the number 40
 //    & console.log the variable
-let partsNeeded = '40';
-console.log('1. Number of partsNeeded:');
+let partsNeeded = 40;
+console.log('1. Number of partsNeeded:', partsNeeded );
 
 // 2. Create a variable call 'supplyChanges' set it to an array containing
 //    the following numbers: 3, 5, -6, 0, 7, 11
 let supplyChanges = [ 3, 5, -6, 0, 7, 11 ];
-console.log('2. Array of supplyChanges:');
+console.log('2. Array of supplyChanges:', supplyChanges);
 
 // 3. Console log the value of 'supplyChanges' at index 2
 
@@ -30,10 +30,10 @@ console.log('5. Adding 25 to supplyChanges.', supplyChanges.push(25));
 console.log('6. Showing supplyChanges...');
 for (let x = 0; x < supplyChanges.length + 1; x++){
   if (supplyChanges[x] > 0) {
-    console.log('Added '+ x + ' parts.');
+    console.log('Added '+ supplyChanges[x] + ' parts.');
   }
   else if (supplyChanges[x] < 0){
-    console.log('Part count -' + x);
+    console.log('Part count -' + supplyChanges[x]);
   }
   else {
     console.log('No change');
